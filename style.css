@@ -6,72 +6,111 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 20px;
-    background-color: #f4f4f4;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
 }
 
 header {
-    background: linear-gradient(90deg, #333, #444);
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
     color: #fff;
-    padding: 20px;
+    padding: 40px 20px;
     text-align: center;
     border-radius: 10px;
+    margin: 20px 0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+    font-size: 3em;
 }
 
 p {
     font-size: 1.2em;
 }
 
+nav {
+    text-align: center;
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2575fc;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #6a11cb;
+}
+
 section {
     margin: 20px 0;
-    background: #fff;
     padding: 20px;
+    background: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
-    color: #333;
+    color: #6a11cb;
     margin-bottom: 15px;
 }
 
-ul {
-    list-style-type: none;
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
 }
 
-li {
-    margin: 10px 0;
+.project-item {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-a {
+.project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.project-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.project-item a {
+    display: inline-block;
+    margin-top: 10px;
     text-decoration: none;
-    color: #007BFF;
-    font-weight: bold;
-    transition: color 0.3s;
+    color: #fff;
+    background: #2575fc;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
 }
 
-a:hover {
-    color: #0056b3;
+.project-item a:hover {
+    background: #6a11cb;
 }
 
 footer {
     text-align: center;
     margin-top: 20px;
-    font-size: 0.9em;
-    color: #666;
-}
-
-footer a {
-    color: #007BFF;
-}
-
-footer a:hover {
-    color: #0056b3;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    border-radius: 10px;
 }
